@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ma première application</string>
+    <string name="action_settings">Settings</string>
+    <string name="connexion">Connexion :</string>
+    <string name="login">Login</string>
+    <string name="password">Mot de passe</string>
+    <string name="seConnecter">Se connecter</string>
+    <string name="monCompte">Mon Compte</string>
+    <string name="vide"></string>
+    <string name="choixDestinataire">Choisissez un destinataire :</string>
+    <string name="choixMontant">Choisissez un montant (entre 1 et 100€) :</string>
+    <string name="valider">Valider</string>
+    <string name="unEuro">1€</string>
+
+</resources>

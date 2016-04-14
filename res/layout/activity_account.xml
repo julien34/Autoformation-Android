@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtBienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/vide"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listDestinataire"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/txtBienvenue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        tools:listitem="@android:layout/simple_list_item_1" >
+
+    </ListView>
+
+    <SeekBar
+        android:id="@+id/seekBarChoixMontant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/listDestinataire"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/choixDestinataire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBienvenue"
+        android:layout_below="@+id/txtBienvenue"
+        android:layout_marginTop="65dp"
+        android:text="@string/choixDestinataire"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/selectMontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choixDestinataire"
+        android:layout_below="@+id/listDestinataire"
+        android:layout_marginTop="20dp"
+        android:text="@string/choixMontant"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarChoixMontant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/valider" />
+
+    <TextView
+        android:id="@+id/montantChoisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarChoixMontant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/unEuro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
